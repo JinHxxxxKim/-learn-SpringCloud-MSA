@@ -1,6 +1,6 @@
 jwt:
   expiration_time: 86400000 
-  secret: llllllllllldksgdjsbnvkjsdbkvjdbkvjbasjlcnaskvndjfbdkvbalnaslkbnsjbasdkasndlkasndalkjsdbvlsdnvlksdnvlkbsjdvbkjsdbvd
+  secret: dksgdjsbnvkjsdbkvjdbkvjbasjlcnaskvndjfbdkvbalnaslkbnsjbasdkasndlkasndalkjsdbvlsdnvlksdnvlkbsjdvbkjsdbvd
 
 gateway:
   ip: 192.168.56.1
