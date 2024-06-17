@@ -1,0 +1,49 @@
+server:
+  port: 0
+
+spring:
+  application:
+    name: user-service
+  h2:
+    console:
+      enabled: true
+      settings:
+        web-allow-others: true
+      path: /h2-console
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop # 시작할 때 새로 생성 하고 세션을 마칠 때 스키마를 소멸 시킵니다.
+    show-sql: true
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+greeting:
+  message: Welcome to the Simple E-Commerce
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+
+#jwt:
+#  expiration_time: 86400000 # 1일짜리 토큰
+#  secret: adksgdjsbnvkjsdbkvjdbkvjbasjlcnaskvndjfbdkvbalnaslkbnsjbasdkasndlkasndalkjsdbvlsdnvlksdnvlkbsjdvbkjsdbvd
+
+# Actuator 설정
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh, beans, health
