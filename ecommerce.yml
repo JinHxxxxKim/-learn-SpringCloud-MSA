@@ -1,6 +1,6 @@
 jwt:
   expiration_time: 86400000 
-  secret: changed-default-dksgdjsbnvkjsdbkvjdbkvjbasjlcnaskvndjfbdkvbalnaslkbnsjbasdkasndlkasndalkjsdbvlsdnvlksdnvlkbsjdvbkjsdbvd
+  secret: changed-apigateway-default-dksgdjsbnvkjsdbkvjdbkvjbasjlcnaskvndjfbdkvbalnaslkbnsjbasdkasndlkasndalkjsdbvlsdnvlksdnvlkbsjdvbkjsdbvd
 
 gateway:
   ip: 192.168.56.1 
