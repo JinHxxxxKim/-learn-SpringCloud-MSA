@@ -3,5 +3,5 @@ spring:
     config:
       uri: http://127.0.0.1:8888 # Config Service 주소
       name: ecommerce # 설정파일 이름
-  profiles:
-    active: dev
+#  profiles:
+#    active: dev

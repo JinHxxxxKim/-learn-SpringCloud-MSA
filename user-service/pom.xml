@@ -109,6 +109,11 @@
             <artifactId>spring-cloud-starter-bootstrap</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bus-amqp</artifactId>
+        </dependency>
+
         <!-- Spring Boot Actuator 설정 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
