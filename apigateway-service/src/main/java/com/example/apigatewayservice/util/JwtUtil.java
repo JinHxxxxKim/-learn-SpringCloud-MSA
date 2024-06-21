@@ -18,7 +18,7 @@ public class JwtUtil {
     public boolean isValid(String token) {
         boolean isValid = true;
         String subject = null;
-
+        System.out.println("env.getProperty(\"jwt.secret\") = " + env.getProperty("jwt.secret"));
         try {
             subject = Jwts.parser()
                     .verifyWith(Keys.hmacShaKeyFor(env.getProperty("jwt.secret").getBytes(StandardCharsets.UTF_8)))

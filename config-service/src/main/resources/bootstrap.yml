@@ -1,2 +1,6 @@
 encrypt:
-  key: qwerasdfzxcqwerasdfzxcv1234qweasd # 대칭키에 사용
+#  key: qwerasdfzxcqwerasdfzxcv1234qweasd # 대칭키에 사용
+  key-store:
+    location: file:///${user.home}/inflearn/springcloud/keystore/apiEncryptionKey.jks
+    password: test1234
+    alias: apiEncryptionKey
