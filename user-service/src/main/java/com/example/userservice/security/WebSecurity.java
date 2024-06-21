@@ -42,8 +42,8 @@ public class WebSecurity {
             "/welcome"
     };
 
-//    public static final String ALLOWED_IP_ADDRESS = "127.0.0.1";
-    public static final String ALLOWED_IP_ADDRESS = "192.168.56.1";
+    public static final String ALLOWED_IP_ADDRESS = "127.0.0.1";
+//    public static final String ALLOWED_IP_ADDRESS = "192.168.56.1";
     public static final String SUBNET = "/32";
     // Takes a specific IP address or a range specified using the IP/Netmask (e.g. 192.168.1.0/24 or 202.24.0.0/14).
     public static final IpAddressMatcher ALLOWED_IP_ADDRESS_MATCHER = new IpAddressMatcher(ALLOWED_IP_ADDRESS + SUBNET);
